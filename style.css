@@ -1,0 +1,158 @@
+/* Global and container */
+body, html {
+  margin: 0;
+  height: 100%;
+  background: #160b27;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #f0e5fc;
+}
+
+#container {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(30, 0, 70, 0.85);
+  border-radius: 25px;
+  box-shadow: 0 0 50px #9c27b0cc;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.invite-card {
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Three.js Canvas wrapper */
+#threejs-canvas {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 15px #9c27b022 inset;
+  background: #2e094e;
+  margin-bottom: 1rem;
+}
+
+/* Text Styling */
+header h1 {
+  font-size: 2.2rem;
+  margin: 0.2rem 0 0 0;
+  color: #e6c8ff;
+  text-shadow: 0 0 14px #ab47bc;
+}
+header h2 {
+  font-weight: 500;
+  color: #f49d20;
+  margin: 0.1rem 0;
+  font-size: 1.4rem;
+}
+header h3 {
+  font-weight: 400;
+  color: #d3a8ff;
+  margin-bottom: 0.8rem;
+}
+
+/* Section content */
+.content p {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  color: #f3eaf7;
+}
+
+/* Highlights list */
+ul.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+}
+ul.highlights li {
+  background: #6a3fb0cc;
+  padding: 10px 14px;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 8px #ab47bcaa;
+  font-weight: 600;
+}
+
+/* Details */
+.details-card {
+  background: linear-gradient(90deg, #a480e4, #f49d20);
+  border-radius: 12px;
+  padding: 15px 10px;
+  margin: 1rem 0;
+  box-shadow: 0 0 14px #f49d2099;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+form input {
+  width: 85%;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+form button {
+  width: 85%;
+  padding: 0.85rem;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  background: #ab47bc;
+  color: #eee;
+  font-weight: 700;
+  box-shadow: 0 0 15px #ab47bcaa;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #f49d20;
+  color: #160b27;
+  box-shadow: 0 0 20px #f49d2099;
+}
+
+/* Footer */
+footer {
+  color: #bb99ffcc;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 360px) {
+  #container {
+    max-width: 350px;
+  }
+  #threejs-canvas {
+    height: 230px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
+}
